@@ -183,7 +183,7 @@ $(document).ready(function () {
         // Lower-case all letters and replace all spaces with hypens to meet formatting criteria for politifacts json query
         queryName = namesearch.replace(/\s+/g, '-').toLowerCase();
 
-        $.getJSON("http://www.politifact.com/api/statements/truth-o-meter/people/" + queryName + "/json/?n=3&callback=?",
+        $.getJSON("https://www.politifact.com/api/statements/truth-o-meter/people/" + queryName + "/json/?n=3&callback=?",
             function (data) {
 
                 if ((data === undefined) || (data.length == 0)) {
